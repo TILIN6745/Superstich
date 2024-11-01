@@ -185,7 +185,7 @@ const connectionOptions = {
 logger: pino({ level: 'silent' }),
 printQRInTerminal: opcion == '1' ? true : methodCodeQR ? true : false,
 mobile: MethodMobile, 
-browser: opcion == '1' ? ['GataBotLite-MD', 'Edge', '2.0.0'] : methodCodeQR ? ['GataBotLite-MD', 'Edge', '2.0.0'] : ['Ubuntu', 'Chrome', '110.0.1587.56'],
+browser: opcion == '1' ? ['stichbot', 'Edge', '2.0.0'] : methodCodeQR ? ['stichbot', 'Edge', '2.0.0'] : ['Ubuntu', 'Chrome', '110.0.1587.56'],
 auth: {
 creds: state.creds,
 keys: makeCacheableSignalKeyStore(state.keys, Pino({ level: "fatal" }).child({ level: "fatal" })),
